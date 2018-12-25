@@ -16,8 +16,8 @@ nohup command >/dev/null 2>&1 & ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1
 ```
 
 ```
-mssfix 1240
-tun-mtu 1240
+mssfix 1340
+tun-mtu 1340
 
 etc/openvpn/
 *.conf
