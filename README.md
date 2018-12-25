@@ -11,7 +11,7 @@ https://build.openvpn.net/downloads/releases/
 ···
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
-nohup command >/dev/null 2>&1 & ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-mode faketcp
+nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 & 
 
 ```
 
