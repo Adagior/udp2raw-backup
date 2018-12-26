@@ -3,6 +3,7 @@ https://blog.bluerain.io/p/udp-tunnel-0.html
 ```
 https://github.com/wangyu-/UDPspeeder/releases
 https://github.com/wangyu-/udp2raw-tunnel/releases
+https://github.com/wangyu-/udp2raw-multiplatform/wiki/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
 
 https://github.com/Nyr/openvpn-install
 https://build.openvpn.net/downloads/releases/
