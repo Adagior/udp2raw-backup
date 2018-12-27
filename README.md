@@ -22,6 +22,9 @@ nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-
 ./speederv2_arm -c -l0.0.0.0:1111 -r127.0.0.1:2222 --mode 0 -f2:4 -q1
 
 
+# Run at client side
+udp2raw_mp.exe -c -l0.0.0.0:3333  -r44.55.66.77:4096 -k "passwd" --raw-mode easy-faketcp
+
 
 ```
 
