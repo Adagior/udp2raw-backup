@@ -14,14 +14,15 @@ wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
 nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 & 
 
+服务端
+nohup ./speederv2_amd64 -s -l0.0.0.0:8877 -r127.0.0.1:1194 --mode 0 -f2:4 -q1 >/dev/null 2>&1 &
+nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:8877  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 &
 
-./speederv2_amd64 -s -l0.0.0.0:8877 -r127.0.0.1:1194 --mode 0 -f2:4 -q1
-./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:8877  -a -k "passwd" --raw-mode faketcp
-
+客户端
 ./udp2raw_arm -c -l0.0.0.0:2222 -r?.?.?.?:8855 -a -k "passwd" --raw-mode faketcp --cipher-mode xor
 ./speederv2_arm -c -l0.0.0.0:1111 -r127.0.0.1:2222 --mode 0 -f2:4 -q1
 
-
+win客户端
 # Run at client side
 udp2raw_mp.exe -c -l0.0.0.0:3333  -r44.55.66.77:4096 -k "passwd" --raw-mode easy-faketcp
 
