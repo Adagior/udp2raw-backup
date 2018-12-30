@@ -1,5 +1,8 @@
 https://blog.bluerain.io/p/udp-tunnel-0.html
 
+https://www.jianshu.com/p/46d508f26def
+https://www.jianshu.com/p/46d508f26def
+
 ```
 https://github.com/wangyu-/UDPspeeder/releases
 https://github.com/wangyu-/udp2raw-tunnel/releases
