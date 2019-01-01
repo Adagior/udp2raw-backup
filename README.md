@@ -17,6 +17,7 @@ wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
 nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 & 
 
+
 服务端
 nohup ./speederv2_amd64 -s -l0.0.0.0:8877 -r127.0.0.1:1194 --mode 0 -f2:4 -q1 >/dev/null 2>&1 &
 nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:8877  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 &
@@ -39,3 +40,6 @@ tun-mtu 1340
 etc/openvpn/
 *.conf
 ```
+
+路由
+https://github.com/FQrabbit/VPN-skip-China-route-Window 
