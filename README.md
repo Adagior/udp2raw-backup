@@ -15,6 +15,7 @@ https://build.openvpn.net/downloads/releases/
 
 ···
 wget https://github.com/Adagior/udp2raw-backup/raw/master/udp.zip
+yum install -y unzip zip
 unzip udp.zip
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
