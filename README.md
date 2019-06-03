@@ -22,7 +22,7 @@ https://build.openvpn.net/downloads/releases/
 yum install -y unzip zip
 unzip udp.zip
 tar -zxvf udp2raw_binaries.tar.gz
-tar zxvf speederv2_binaries.tar.gz
+tar -zxvf speederv2_binaries.tar.gz
 
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
