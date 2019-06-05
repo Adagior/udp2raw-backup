@@ -44,8 +44,8 @@ udp2raw_mp.exe -c -l0.0.0.0:3333  -r44.55.66.77:4096 -k "passwd" --raw-mode easy
 
 bat命令
 @echo off  
-start cmd /k C:\Users\legend_ko\Desktop\VPN\zzz\speederv2.exe -c -l0.0.0.0:1212 -r127.0.0.1:2222 --mode 0 -f2:4 -q1
-start cmd /k C:\Users\legend_ko\Desktop\VPN\zzz\udp2raw_mp_nolibnet.exe -c -l0.0.0.0:2222 -r199.195.249.74:18877 -k "passwd" --raw-mode faketcp
+start cmd /k C:\Users\legend_ko\Desktop\VPN\zzz\speederv2.exe -c -l0.0.0.0:1111 -r127.0.0.1:2222 --mode 0 -f2:4 -q1
+start cmd /k C:\Users\legend_ko\Desktop\VPN\zzz\udp2raw_mp_nolibnet.exe -c -l0.0.0.0:2222 -r?.?.?.?:8877 -k "passwd" --raw-mode faketcp
 
 
 ```
