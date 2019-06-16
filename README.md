@@ -29,7 +29,8 @@ tar -zxvf speederv2_binaries.tar.gz
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
 
-nohup ./udp2raw_amd64 -s -l0.0.0.0:8855 -r 127.0.0.1:1194  -a -k "passwd" --raw-mode faketcp >/dev/null 2>&1 & 
+firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
+firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
 
 
 服务端
