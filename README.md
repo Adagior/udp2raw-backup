@@ -28,6 +28,8 @@ tar -zxvf speederv2_binaries.tar.gz
 
 wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh
 
+cd /etc/openvpn/server/
+wget https://github.com/Adagior/udp2raw-backup/raw/master/server.conf
 
 firewall-cmd --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
 firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to ?.?.?.?
