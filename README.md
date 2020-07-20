@@ -36,11 +36,11 @@ firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -s 10.8.0.0/
 
 
 服务端
-nohup ./speederv2_amd64 -s -l0.0.0.0:18899 -r127.0.0.1:11111 --mode 0 -f2:4 -q1 >/dev/null 2>&1 &
-nohup ./udp2raw_amd64 -s -l0.0.0.0:18877 -r 127.0.0.1:18899  -a -k "passwd" --raw-mode faketcp --cipher-mode xor >/dev/null 2>&1 &
+nohup ./speederv2_amd64 -s -l0.0.0.0:2222 -r127.0.0.1:11111 --mode 0 -f2:4 -q1 >/dev/null 2>&1 &
+nohup ./udp2raw_amd64 -s -l0.0.0.0:1212 -r 127.0.0.1:2222  -a -k "passwd" --raw-mode faketcp --cipher-mode xor >/dev/null 2>&1 &
 
 客户端
-nohup ./udp2raw_amd64 -c -l0.0.0.0:2222 -r?.?.?.?:8877 -a -k "passwd" --raw-mode faketcp --cipher-mode xor >/dev/null 2>&1 &
+nohup ./udp2raw_amd64 -c -l0.0.0.0:2222 -r?.?.?.?:1212 -a -k "passwd" --raw-mode faketcp --cipher-mode xor >/dev/null 2>&1 &
 nohup ./speederv2_amd64 -c -l0.0.0.0:1212 -r127.0.0.1:2222 --mode 0 -f2:4 -q1 >/dev/null 2>&1 &
 
 win客户端
