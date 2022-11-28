@@ -18,9 +18,8 @@ https://build.openvpn.net/downloads/releases/
 ···
 
 ···
-wget https://github.com/Adagior/udp2raw-backup/raw/master/2.zip
-yum install -y unzip zip
-unzip 2.zip
+wget https://github.com/Adagior/udp2raw-backup/raw/master/speederv2_amd64
+wget https://github.com/Adagior/udp2raw-backup/raw/master/udp2raw_amd64
 chmod a+x speederv2_amd64
 chmod a+x udp2raw_amd64
 tar -zxvf udp2raw_binaries.tar.gz
